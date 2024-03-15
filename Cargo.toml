@@ -1,0 +1,15 @@
+[package]
+name = "alertmanager-webhook-types"
+version = "0.1.0"
+edition = "2021"
+description = "Type definitions for parsing alertmanager webhook calls"
+license = "AGPL-3.0-only"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.197", features = ["derive"] }
+time = { version = "0.3.34", features = ["serde", "serde-human-readable"] }
+
+[dev-dependencies]
+serde_json = "1.0.114"
